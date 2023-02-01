@@ -1,0 +1,39 @@
+[build]
+  command = "npm run build"
+  functions = "functions"
+  publish = "out"
+
+[[redirects]]
+  from = "/product/:slug"
+  to = "/product/[slug]"
+  status = 200
+
+[[redirects]]
+  from = "/men"
+  to = "/[category]?category=men"
+  status = 200
+
+[[redirects]]
+  from = "/women"
+  to = "/[category]?category=women"
+  status = 200
+
+[[redirects]]
+  from = "/accessories"
+  to = "/[category]?category=accessories"
+  status = 200
+
+[[redirects]]
+  from = "/men/:subcategory"
+  to = "/[category]/[subcategory]?category=men"
+  status = 200
+
+[[redirects]]
+  from = "/women/:subcategory"
+  to = "/[category]/[subcategory]?category=women"
+  status = 200
+
+[[redirects]]
+  from = "/accessories/:subcategory"
+  to = "/[category]/[subcategory]?category=accessories"
+  status = 200
