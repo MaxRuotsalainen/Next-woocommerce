@@ -1,7 +1,5 @@
 [build]
-  command = "npm run build"
-  functions = "functions"
-  publish = "out"
+publish = ".next"
 
 [[redirects]]
   from = "/product/:slug"
