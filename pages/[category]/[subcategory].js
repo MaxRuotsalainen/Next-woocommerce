@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ProductCard from "../components/ProductCard";
-import Loader from "../components/Loader";
+import ProductCard from "../../components/ProductCard";
+import Loader from "../../components/Loader";
 import Link from "next/link";
-import { getFeaturedProducts } from "../lib/api";
+import { getFeaturedProducts } from "../../lib/api";
 import React, { useState, useEffect } from "react";
 
 const SubCategory = () => {

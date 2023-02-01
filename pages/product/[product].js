@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { getProduct, getCategories, getFeaturedProducts } from "../lib/api";
-import Loader from "../components/Loader";
+import { getProduct, getCategories, getFeaturedProducts } from "../../lib/api";
+import Loader from "../../components/Loader";
 import { useRouter } from "next/router";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../../components/ProductCard";
 
 const Product = ({ productSlug }) => {
   const [product, setProduct] = useState({});
