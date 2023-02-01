@@ -2,7 +2,7 @@ module.exports = {
   exportPathMap: function() {
       return {
           '/': { page: '/' },
-          '/shop': { page: '/' },
+          '/shop': { page: '/shop' },
           '/cart': { page: '/cart' },
           '/checkout': { page: '/checkout' },
           '/product/[slug]': { page: '/product' },
@@ -12,7 +12,7 @@ module.exports = {
           '/[category]/[subcategory]': { page: '/subcategory' },
       };
   },
-  rewrites() {
+  async rewrites() {
     return [      { source: '/product/:slug', destination: '/product/[slug]' },      { source: '/men', destination: '/[category]?category=men' },      { source: '/women', destination: '/[category]?category=women' },      { source: '/accessories', destination: '/[category]?category=accessories' }, { source: '/men/:subcategory', destination: '/[category]/[subcategory]?category=men' },      { source: '/women/:subcategory', destination: '/[category]/[subcategory]?category=women' },      { source: '/accessories/:subcategory', destination: '/[category]/[subcategory]?category=accessories' },    ];    
   },
 };

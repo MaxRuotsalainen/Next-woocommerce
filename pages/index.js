@@ -10,11 +10,13 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ 
   useEffect(() => {
     const wcUrl = "https://shop-interview.acrowd.se/wp-json/wc/v3/";
     const consumerKey = "ck_4c0d8a4f83c78831c200e39d1f371e92d419d863";
     const consumerSecret = "cs_1eb6c96b9a32942b52a868da3ad28698b15873ff";
+   
+  
     const headers = {
       "Content-Type": "application/json",
       Authorization:
@@ -48,10 +50,11 @@ const Home = () => {
   };
   return (
     <>
+   
       <a href="./" className="navBut" onClick={handleRemoveFilter}>
         <h1 className="text">Shop</h1>
       </a>
-
+     
       <nav className="navbar">
         <Link legacyBehavior href="/[category]" as={`/accessories`}>
           <a className="navBut">Accessories</a>

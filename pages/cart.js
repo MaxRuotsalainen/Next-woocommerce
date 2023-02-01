@@ -40,12 +40,16 @@ const Cart = () => {
         <table className="table">
           <thead className="cartHead">
             <tr>
+           
               <th>Image</th>
               <th>Product</th>
               <th>Quantity</th>
               <th>Price</th>
               <th>Total</th>
               <th>Edit</th>
+              <th> <div className="Bar">
+       
+       </div></th>
             </tr>
           </thead>
           <tbody>

@@ -67,16 +67,17 @@ const Product = ({ productSlug }) => {
         </div>
         <div className="div2">
           {" "}
-          <h3 className="productTitle">{product[0].name}</h3>
+         
           <div>
             {product[0].categories.length >= 2 ? (
-              <h4>
-                {product[0].categories[1].name}/{product[0].categories[0].name}
-              </h4>
+              <p className="BreadCrumb">
+                Product / {product[0].categories[1].name} / {product[0].categories[0].name}
+              </p>
             ) : product[0].categories.length === 1 ? (
               <h4>{product[0].categories[0].name}</h4>
             ) : null}
           </div>
+          <h3 className="productTitle">{product[0].name}</h3>
           <div className="product">
             <div dangerouslySetInnerHTML={{ __html: product[0].price_html }} />
           </div>

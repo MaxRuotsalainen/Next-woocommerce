@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br/>
+<p align="center">
+  <a href="https://github.com/MaxRuotsalainen/Next-woocommerce">
+    <img src="https://avatars.githubusercontent.com/u/114402676?v=4" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Next.js  - Ecommerce shop with WooCommerce backend</h3>
+
+  <p align="center">
+    A simple but working Ecommerce website
+    <br/>
+    <br/>
+    <a href="https://github.com/MaxRuotsalainen/Next-woocommerce"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/MaxRuotsalainen/Next-woocommerce">View Demo</a>
+    .
+    <a href="https://github.com/MaxRuotsalainen/Next-woocommerce/issues">Report Bug</a>
+    .
+    <a href="https://github.com/MaxRuotsalainen/Next-woocommerce/issues">Request Feature</a>
+  </p>
+</p>
+
+![Downloads](https://img.shields.io/github/downloads/MaxRuotsalainen/Next-woocommerce/total) ![Contributors](https://img.shields.io/github/contributors/MaxRuotsalainen/Next-woocommerce?color=dark-green) ![Forks](https://img.shields.io/github/forks/MaxRuotsalainen/Next-woocommerce?style=social) ![Stargazers](https://img.shields.io/github/stars/MaxRuotsalainen/Next-woocommerce?style=social) ![Issues](https://img.shields.io/github/issues/MaxRuotsalainen/Next-woocommerce) ![License](https://img.shields.io/github/license/MaxRuotsalainen/Next-woocommerce) 
+
+## Table Of Contents
+
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+
+## About The Project
+
+![Screen Shot](https://i.imgur.com/UQYlD9v.png)
+
+This is an e-commerce website project built using React, Next.js and WooCommerce API. It provides a user-friendly interface to browse products, add them to cart and proceed to checkout.
+Features
+* Display products with categories and product details
+* Nested and Dynamic Routing
+* Add products to cart, manage cart and proceed to checkout
+
+
+
+## Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [Next.js](https://nextjs.org/)
+* [Woocommerce](https://woocommerce.com/)
+* [React](https://reactjs.org/)
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
-yarn dev
+### Prerequisites
+
+Prerequisites
+What things you need to install the software and how to install them
+
+Node.js
+npm
+WooCommerce API credentials
+
+### Installation
+
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/your_username_/Project-Name.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install NPM packages
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Enter your api
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```JS
+WC_API_KEY=<your-api-key>
+WC_API_SECRET=<your-api-secret>
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
