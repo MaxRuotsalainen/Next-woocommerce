@@ -9,8 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.1.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@mdx-js/loader": "^2.2.1",
+    "@mdx-js/react": "^2.2.1",
+    "@next/mdx": "^13.1.6",
+    "axios": "^1.2.4",
+    "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "glob": "^8.1.0",
+    "next": "^13.1.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.2.0",
+    "react-router": "^6.7.0",
+    "react-router-dom": "^6.7.0",
+    "styled-jsx": "^5.1.2"
   }
 }

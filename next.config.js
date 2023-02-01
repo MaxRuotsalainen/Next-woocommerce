@@ -1,6 +1,18 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  exportPathMap: function() {
+      return {
+          '/': { page: '/' },
+          '/shop': { page: '/' },
+          '/cart': { page: '/cart' },
+          '/checkout': { page: '/checkout' },
+          '/product/[slug]': { page: '/product' },
+          '/men': { page: '/[category]', query: { category: 'men' } },
+          '/women': { page: '/[category]', query: { category: 'women' } },
+          '/accessories': { page: '/[category]', query: { category: 'accessories' } },
+          '/[category]/[subcategory]': { page: '/subcategory' },
+      };
+  },
+  async rewrites() {
+    return [      { source: '/product/:slug', destination: '/product/[slug]' },      { source: '/men', destination: '/[category]?category=men' },      { source: '/women', destination: '/[category]?category=women' },      { source: '/accessories', destination: '/[category]?category=accessories' }, { source: '/men/:subcategory', destination: '/[category]/[subcategory]?category=men' },      { source: '/women/:subcategory', destination: '/[category]/[subcategory]?category=women' },      { source: '/accessories/:subcategory', destination: '/[category]/[subcategory]?category=accessories' },    ];    
+  },
+};
