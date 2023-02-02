@@ -13,8 +13,8 @@ const Home = () => {
  
   useEffect(() => {
     const wcUrl = "https://shop-interview.acrowd.se/wp-json/wc/v3/";
-    const consumerKey = "ck_4c0d8a4f83c78831c200e39d1f371e92d419d863";
-    const consumerSecret = "cs_1eb6c96b9a32942b52a868da3ad28698b15873ff";
+    const consumerKey = process.env.NEXT_PUBLIC_CONSUMER_KEY;
+    const consumerSecret = process.env.NEXT_PUBLIC_CONSUMER_SECRET;
    
   
     const headers = {
@@ -50,7 +50,7 @@ const Home = () => {
   };
   return (
     <>
-   
+ 
       <a href="./" className="navBut" onClick={handleRemoveFilter}>
         <h1 className="text">Shop</h1>
       </a>
@@ -75,3 +75,4 @@ const Home = () => {
   );
 };
 export default Home;
+

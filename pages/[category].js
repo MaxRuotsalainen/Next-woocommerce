@@ -62,6 +62,7 @@ const Category = () => {
       <Link legacyBehavior href="/">
         <h1 className="text">{router.query.category}</h1>
       </Link>
+     
       <div className="navBut">
         {uniqueCategories.map((categoryName) => (
           <Link
