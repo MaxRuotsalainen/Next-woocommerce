@@ -82,7 +82,8 @@ npm install
 3. Enter your api
 
 ```JS
-WC_API_KEY=<your-api-key>
-WC_API_SECRET=<your-api-secret>
+Create a .env.local file in the root directory of the folder and add these variables! 
+NEXT_PUBLIC_CONSUMER_KEY=<Your-api-key>
+NEXT_PUBLIC_CONSUMER_SECRET=<Your-api-key>
 ```
 
